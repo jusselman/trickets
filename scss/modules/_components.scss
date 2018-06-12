@@ -1,0 +1,69 @@
+/* Carousel */
+
+.carousel {
+
+  margin-bottom: 20px;
+}
+
+.carousel img {
+
+    padding:3px;
+    @include add-border(1px, #cccccc, all);
+    height: 500px;
+}
+
+/* Tabs */
+
+.tab-pane{
+	padding:20px 10px;
+	@include border-radius(5px);
+	margin-bottom:20px;
+}
+
+.tab-primary .tab-pane, .tab-primary .nav-tabs > li.active > a, .tab-primary .nav-tabs > li.active > a:hover, .tab-primary .nav-tabs > li.active > a:focus{
+	@include add-background($primary-color);
+}
+
+.tab-light .tab-pane, .tab-light .nav-tabs > li.active > a, .tab-light .nav-tabs > li.active > a:hover, .tab-light .nav-tabs > li.active > a:focus{
+	@include add-background($light-color);
+}
+
+.tab-secondary .tab-pane, .tab-secondary .nav-tabs > li.active > a, .tab-secondary .nav-tabs > li.active > a:hover, .tab-secondary .nav-tabs > li.active > a:focus{
+	@include add-background($secondary-color);
+}
+
+.tab-dark .tab-pane, .tab-dark .nav-tabs > li.active > a, .tab-dark .nav-tabs > li.active > a:hover, .tab-dark .nav-tabs > li.active > a:focus{
+	@include add-background($dark-color);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    	@include add-background($primary-color);
+}
+
+.nav-tabs-a .nav-item.show .nav-link, .nav-tabs-a .nav-link.active {
+    color: #495057;
+    	@include add-background($light-color);
+}
+
+// GOOGLE MAP ON CONTACT SECTION //
+
+.mapWrapper{
+    overflow:hidden;
+    padding-bottom:15%;
+    padding-top: 0;
+    position:relative;
+    height:450px;
+}
+.mapWrapper iframe{
+    left:0;
+    top:0;
+    height:450px;
+    width:100%;
+    position:absolute;
+}
+
+section.section-map {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}

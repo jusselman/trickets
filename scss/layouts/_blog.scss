@@ -1,0 +1,30 @@
+/* Blog Section */
+
+.section-blog {
+  color: $primary-color;
+  background-color: #000;
+
+}
+
+.blog-post {
+  @include add-border(1px, #cccccc, top);
+  @include add-border(1px, #cccccc, right-left);
+  padding:15px;
+
+  h2.page-header {
+    margin-top: 5px !important;
+  }
+}
+
+ .blog-featured{
+      float:left;
+      margin-right:15px;
+ }
+
+.post-meta {
+  background: #1d3816;
+  padding:10px 10px 10px 10px;
+  @include add-border(1px, #cccccc, all);
+  margin-bottom: 20px;
+
+}

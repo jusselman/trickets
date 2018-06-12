@@ -1,0 +1,199 @@
+/* Sections */
+
+
+section {
+  padding:30px 0;
+}
+
+.section-showtimes {
+  // padding-top: 35px;
+  color: $primary-color;
+  background: #000;
+  padding-top: 0;
+  margin-top: -30px;
+
+  img {
+    height: 275px;
+    width: 325px;
+    position: relative;
+    // border-radius: 25%;
+    // padding: 25px;
+
+    opacity: 1.0;
+      }
+
+ img:hover {
+   opacity: .65;
+ }
+
+  .item {
+    margin: 0 auto;
+    position: relative;
+    // margin: 2%;
+    overflow: hidden;
+    // border-radius: 25%;
+    height: 275px;
+    width: 325px;
+    background: $primary-color;
+
+}
+  .item img {
+    max-width: 100%;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+  .item:hover img {
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+
+}
+
+  h1 {
+    text-align: center;
+  }
+
+  h1, h2, h3, h4, h5 {
+    text-align: left !important;
+
+  }
+
+  button {
+    background: $primary-color;
+    color: #000;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+    transition: background-color .5s, color .5s, font-size 1s;
+
+  }
+
+  button:hover {
+    color:$primary-color;
+    background: #000;
+    font-size:30px;
+  }
+
+
+}
+
+.section-showcase {
+    height:$showcase-height;
+    background:url($showcase-image) no-repeat top center;
+    background-color: #000;
+
+
+    .showcase-content {
+      padding: 20px 15px;
+      text-align: center;
+    }
+
+    h1 {
+      color: $dark-color;
+      font-size: 60px;
+      font-weight: bolder;
+    }
+    img {
+      opacity: 0.60;
+      transition: .5s;
+
+    }
+    img:hover {
+      opacity: 0.99;
+    }
+
+}
+
+.section-search {
+    background: #000;
+    margin-top: 115px;
+    img {
+      margin-left: -15px;
+    }
+    .search {
+      margin: 0 auto;
+      display: block;
+      min-width: 800px;
+    }
+}
+
+.section-about {
+  color: $primary-color;
+  background: #000;
+  padding-top: 60px;
+  height: 100vh;
+
+button {
+  background: #000;
+  color: $primary-color;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 20px;
+  transition: 1s;
+}
+
+button:hover {
+  background: $primary-color;
+  color: #000;
+  padding: 40px;
+  font-size: 100px;
+}
+  .about-header {
+    text-align: center;
+  }
+}
+
+.section-events {
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+}
+
+.section-primary {
+  @include add-background($primary-color);
+  }
+
+.section-secondary {
+  @include add-background($secondary-color);
+}
+
+.section-light {
+  @include add-background($light-color);
+
+  input {
+    background: #000;
+    color: #fff;
+  }
+}
+
+.section-dark {
+  @include add-background ($dark-color);
+}
+
+.section-primary-a {
+  @extend .section-primary;
+  @include add-border(4px, $secondary-color, top);
+}
+
+.section-primary-b {
+  @extend .section-primary;
+  @include add-border(4px, $secondary-color, bottom);
+}
+
+.section-primary-c {
+  @extend .section-primary;
+    h2 {
+      @include add-border(1px, $light-color, bottom);
+      padding-left:65px;
+    }
+}
+
+.section-primary-d {
+  @extend .section-primary;
+    h2 {
+      @include add-border(1px, $light-color, bottom);
+      }
+}
